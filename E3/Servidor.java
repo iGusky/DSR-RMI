@@ -6,7 +6,7 @@ public class Servidor{
     public Servidor(){
         try{
             System.setProperty("java.rmi.server.codebase",  "");
-            InterfaceRemota objetoRemoto = new ObjetoRemoto()
+            InterfaceRemota objetoRemoto = new ObjetoRemoto();
             Naming.rebind("//", objetoRemoto);
             System.out.println("Iniciando servidor...");
 
