@@ -30,9 +30,13 @@ public class ObjetoRemoto extends UnicastRemoteObject implements InterfaceRemota
 
 
     @Override
-    public double calcularRadioCirculo(double radio) throws RemoteException {
-        // TODO Auto-generated method stub
-        return 0;
+    public double calcularCirculo(double radio) throws RemoteException {
+        
+        double area = 0.00;
+        System.out.println("Area del Circulo...")
+        area = 3.1416 * Math.pow(radio,2);
+        
+        return area;
     }
 
 
