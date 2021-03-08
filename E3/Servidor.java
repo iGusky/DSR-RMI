@@ -9,17 +9,10 @@ public class Servidor{
             InterfaceRemota objetoRemoto = new ObjetoRemoto();
             Naming.rebind("//", objetoRemoto);
             System.out.println("Iniciando servidor...");
-
-        
-    
-
         }catch(Exception e){
             e.printStackTrace();
         }
-
-
     }
-
     public static void main(String [] args){
         new Servidor();
     }
