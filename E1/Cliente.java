@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Cliente {
-    public Cliente(){
+  public Cliente() {
 
         double capital = 0.0;
         double interes = 0.0;
