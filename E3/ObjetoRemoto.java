@@ -13,16 +13,11 @@ public class ObjetoRemoto extends UnicastRemoteObject implements InterfaceRemota
     }
 
     @Override
-    public double calcularPoligonoIrregular(double [] array) throws RemoteException {
-        double area = 0;
-        double aux = 0;
+    public double calcularPoligonoIrregular(double area) throws RemoteException {
+       
         System.out.println("Calculando área del poligono irregular");
-        for( int i = 0; i < array.length ; i=i+2){
-            aux = ( (array[i] + array[i+1])/2 );
-            area = area + aux;
-        }
-        final double area2 = area;
-        return area2;
+       
+        return area/2;
     }
    
     @Override

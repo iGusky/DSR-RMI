@@ -56,8 +56,13 @@ public class Cliente {
                         index++;
                         System.out.println("-----------------------");
                     }
+                    double aux = 0,area = 0;
+                    for( int i = 0; i < medidas.length ; i=i+2){
+                        aux = ( (medidas[i] + medidas[i+1]) );
+                        area = area + aux;
+                    }
 
-                    System.out.println("El área del poligono irregular es: "+ objetoRemoto.calcularPoligonoIrregular(medidas));
+                    System.out.println("El área del poligono irregular es: "+ objetoRemoto.calcularPoligonoIrregular(area));
                     break;
             }
         } catch (Exception e) {
